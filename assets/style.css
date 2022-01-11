@@ -8,7 +8,7 @@
     max-width: 1320px;
   }
 }
-@font-face {
+/* @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat'),
     url(~assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Montserrat' !important;
-}
+} */
 #header {
   z-index: 997;
   transition: all 0.5s;
