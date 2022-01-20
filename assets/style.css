@@ -287,10 +287,6 @@ a {
   #hero {
     height: 90vh;
   }
-  #hero .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
   #hero .hero-img {
     text-align: center;
   }
