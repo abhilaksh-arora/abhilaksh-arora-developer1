@@ -28,68 +28,77 @@
           <h6>89, Prabhat Nagar</h6>
         </div>
       </div>
-      <form @submit.prevent="submitForm">
-        <div class="input-wrap">
-          <input
-            id="name"
-            v-model="name"
-            type="text"
-            class="form-control"
-            name="name"
-            placeholder="Name"
-            required
-          />
-          <input
-            id="company"
-            v-model="company"
-            type="text"
-            class="form-control"
-            name="company"
-            placeholder="Company"
-            required
-          />
-          <input
-            id="phone"
-            v-model="phone"
-            type="text"
-            class="form-control"
-            name="phone"
-            placeholder="Phone No."
-            required
-          />
-          <input
-            id="email"
-            v-model="email"
-            type="email"
-            class="form-control"
-            name="email"
-            placeholder="Email"
-            required
-          />
+      <div v-if="isVisible">
+        <form @submit.prevent="submitForm">
+          <div class="input-wrap">
+            <input
+              id="name"
+              v-model="name"
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              id="company"
+              v-model="company"
+              type="text"
+              class="form-control"
+              name="company"
+              placeholder="Company"
+              required
+            />
+            <input
+              id="phone"
+              v-model="phone"
+              type="text"
+              class="form-control"
+              name="phone"
+              placeholder="Phone No."
+              required
+            />
+            <input
+              id="email"
+              v-model="email"
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="input-wrap-2">
+            <input
+              id="subject"
+              v-model="subject"
+              type="text"
+              class="form-control"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              v-model="message"
+              class="form-control"
+              name="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-color" @click="preview()">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+      <div v-else class="my-3 ml-4 text-center">
+        <div class="sent-message">
+          <h3>Your message has been sent. Thank you!</h3>
         </div>
-        <div class="input-wrap-2">
-          <input
-            id="subject"
-            v-model="subject"
-            type="text"
-            class="form-control"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
-          <textarea
-            v-model="message"
-            class="form-control"
-            name="message"
-            rows="5"
-            placeholder="Message"
-            required
-          ></textarea>
-        </div>
-        <div class="btn-wrapper">
-          <button class="btn btn-color">Send Message</button>
-        </div>
-      </form>
+      </div>
     </div>
   </section>
 </template>
