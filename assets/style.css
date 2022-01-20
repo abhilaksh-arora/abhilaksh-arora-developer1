@@ -503,12 +503,6 @@ section {
   color: black;
   text-decoration: none;
 }
-.services .icon-box:hover .icon {
-  background: black;
-}
-.services .icon-box:hover .icon i {
-  color: #3498db;
-}
 .freelancer {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -530,22 +524,22 @@ section {
   font-size: 20px;
   font-weight: 700;
 }
-.features {
+.tech {
   margin-bottom: 40px;
 }
-.features .icon-box {
+.tech .icon-box {
   display: flex;
   align-items: center;
   padding: 10px;
   background: #f6f6f6;
   transition: ease-in-out 0.3s;
 }
-.features .icon-box i {
+.tech .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
-.features .icon-box h3 {
+.tech .icon-box h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -553,16 +547,60 @@ section {
   line-height: 1;
   font-size: 16px;
 }
-.features .icon-box h3 a {
+.tech .icon-box h3 a {
   color: #222222;
   transition: ease-in-out 0.3s;
 }
-.features .icon-box h3 a:hover {
+.tech .icon-box h3 a:hover {
   color: #3498db;
 }
-.features .icon-box:hover {
+.tech .icon-box:hover {
   background: #eef7fc;
 }
+
+.features .icon-boxes {
+  margin-top: 20px;
+}
+.features .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+.features .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.features .icon-box .title a {
+  color: black;
+  transition: 0.3s;
+}
+.features .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.features .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+.features .icon-box:hover {
+  transform: scale(1.08);
+}
+.features .icon-box:hover .title a {
+  color: grey;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -763,6 +801,13 @@ section {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
 @media (min-width: 576px) {
   .modal-dialog {
     min-width: 800px !important;
@@ -872,6 +917,7 @@ section {
   outline: none;
   cursor: pointer;
   color: black;
+  text-decoration: none;
 }
 .faq .faq-list .icon-help {
   font-size: 24px;

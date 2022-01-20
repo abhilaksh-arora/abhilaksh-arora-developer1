@@ -21,7 +21,7 @@
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
         <h1>
-          <a href="index.html"
+          <a id="hero-nav" class="scrollto" @click="scrollToView('hero')"
             >Abhilaksh Arora.<br />
             Developer</a
           >

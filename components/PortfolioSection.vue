@@ -25,7 +25,7 @@
         data-aos-delay="400"
       >
         <div
-          v-for="(item, index) in data.portfolio"
+          v-for="(item, index) in portfolio.data.portfolio"
           :key="index"
           class="col-lg-4 col-md-6 portfolio-item filter-app"
         >
@@ -44,6 +44,6 @@
 
 <script>
 export default {
-  props: { data: { type: Object, default: () => {} } },
+  props: { portfolio: { type: Object, default: () => {} } },
 }
 </script>

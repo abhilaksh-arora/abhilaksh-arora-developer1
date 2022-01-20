@@ -4,17 +4,14 @@
       <div class="section-title">
         <h2>Frequently Asked Questions</h2>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          We provide high standard clean website for your business solutions
         </p>
       </div>
 
       <div class="faq-list">
         <ul v-for="(item, index) in faqs.data.faqs" :key="index">
           <li data-aos="fade-up">
-            <i class="bx bx-help-circle icon-help"></i>
+            <svg-helpSVG />
             <a
               data-bs-toggle="collapse"
               class="collapse"

@@ -2,84 +2,73 @@
   <section id="features" class="features">
     <div class="container">
       <div class="section-title" data-aos="fade-up">
-        <h2>Our Technology Stack</h2>
+        <h2>Features</h2>
         <p>
           We provide high standard clean website for your business solutions
         </p>
       </div>
-
-      <div class="row" data-aos="fade-up" data-aos-delay="300">
-        <div class="col-lg-3 col-md-4">
+      <div class="row icon-boxes">
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <div class="icon-box">
-            <svg-tech-javaSVG />
-            <h3><a href="">Java</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <svg-tech-cppSVG />
-            <h3><a href="">C++</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <svg-tech-pythonSVG />
-            <h3><a href="">Python</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <svg-tech-htmlSVG />
-            <h3><a href="">HTML</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <svg-tech-cssSVG />
-            <h3><a href="">CSS</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <svg-tech-bootstrapSVG />
-            <h3><a href="">Bootstrap</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <svg-tech-javascriptSVG />
-            <h3><a href="">JavaScript</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <svg-tech-sqlSVG />
-            <h3><a href="">MySQL</a></h3>
+            <div class="icon"><svg-clientSVG /></div>
+            <h4 class="title"><a href="">Client Satisfaction</a></h4>
+            <p class="description">
+              We continuously monitor and gather feedback from all of our
+              clients in order to improve our services and adapt the delivery
+              process. This way, we can ensure that our collaboration is
+              satisfactory to you and future clients.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 mt-4">
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
           <div class="icon-box">
-            <svg-tech-vuejsSVG />
-            <h3><a href="">Vue JS</a></h3>
+            <div class="icon"><svg-deliverySVG /></div>
+            <h4 class="title"><a href="">Fast Delivery Process</a></h4>
+            <p class="description">
+              We want you to get your app out there as soon as possible, and
+              gather feedback from your users. Thanks to the MVP approach you’ll
+              save money and time, and the scope will be under control.
+            </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
+
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
           <div class="icon-box">
-            <svg-tech-nuxtjsSVG />
-            <h3><a href="">Nuxt JS</a></h3>
+            <div class="icon"><svg-cheapSVG /></div>
+            <h4 class="title"><a href="">Cheap Prices</a></h4>
+            <p class="description">
+              We are better and yet cheaper than other solutions
+            </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
+
+        <div
+          class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
           <div class="icon-box">
-            <svg-tech-flutterSVG />
-            <h3><a href="">Flutter</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <svg-tech-javaSVG />
-            <h3><a href="">Flavor Nivelanda</a></h3>
+            <div class="icon"><svg-transparencySVG /></div>
+            <h4 class="title"><a href="">Transparency</a></h4>
+            <p class="description">
+              We discuss priorities, long term plans and get feedback on regular
+              meetings and shared communication channels with all the
+              stakeholders. Every week, we share detailed timesheets to talk
+              about budget, costs, risks, and opportunities.
+            </p>
           </div>
         </div>
       </div>

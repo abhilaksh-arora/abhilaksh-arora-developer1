@@ -20,7 +20,7 @@
           />
           <div class="card-body">
             <h5 class="card-title">{{ $prismic.asText(item.heading) }}</h5>
-            <p class="card-text">
+            <p class="card-text ellipsis">
               {{ $prismic.asText(item.description) }}
             </p>
             <button

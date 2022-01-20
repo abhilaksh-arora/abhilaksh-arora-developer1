@@ -30,13 +30,32 @@
             nam consequuntur nemo a facilis eius blanditiis dolorem soluta. Ut
             rerum pariatur qui temporibus fugit!
           </p>
-          <!-- <div class="social">
-            <a href="#"><img src="images/website.svg" alt="" /></a>
-            <a href="#"><img src="images/facebook.svg" alt="" /></a>
-            <a href="#"><img src="images/twitter.svg" alt="" /></a>
-            <a href="#"><img src="images/pintrest.svg" alt="" /></a>
-            <a href="#"><img src="images/instagram.svg" alt="" /></a>
-          </div> -->
+          <div class="social">
+            <a href="https://www.facebook.com/abhilaksh.arora" class="facebook"
+              ><svg-facebookSVG
+            /></a>
+            <a
+              href="https://instagram.com/abhiii_abhilaksh?utm_medium=copy_link"
+              class="instagram"
+              ><svg-instagramSVG
+            /></a>
+            <a href="https://twitter.com/abhilaksh_arora" class="twitter"
+              ><svg-twitterSVG
+            /></a>
+            <a
+              href="https://app.netlify.com/teams/abhilaksh-arora/overview"
+              class="linkedin"
+              ><svg-linkedinSVG
+            /></a>
+            <a href="https://github.com/abhilaksh-arora" class="github"
+              ><svg-githubSVG
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/abhilaksh-arora-94b1861b6/"
+              class="netlify"
+              ><svg-netlifySVG
+            /></a>
+          </div>
         </div>
       </div>
     </div>

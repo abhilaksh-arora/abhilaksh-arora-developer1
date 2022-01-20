@@ -5,7 +5,6 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body d-flex flex-column flex-lg-row">
-            <!-- <h3>{{ data.image }}</h3> -->
             <div class="modal-img">
               <img :src="data.image.url" alt="" width="500px" height="500px" />
             </div>
@@ -22,7 +21,7 @@
                 <hr />
               </div>
               <div class="modal-description">
-                <p>{{ $prismic.asText(data.detailed_description) }}</p>
+                <p>{{ $prismic.asText(data.description) }}</p>
               </div>
             </div>
           </div>
