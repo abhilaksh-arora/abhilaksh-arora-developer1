@@ -67,8 +67,8 @@ export default {
       compact: true
     }
   },
-  target: 'static',
-      router: {
-        base: '/abhilaksh-arora-developer1/'
-      }
+  // target: 'static',
+  //     router: {
+  //       base: '/abhilaksh-arora-developer1/'
+  //     }
 }
