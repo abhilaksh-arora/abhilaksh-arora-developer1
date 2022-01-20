@@ -13,7 +13,11 @@
             We are team of talented designers with mordern web solutions.
           </h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-color btn getstarted scrollto"
+            <a
+              id="about-nav"
+              ref="about"
+              class="btn-get-started scrollto"
+              @click="scrollToView('about')"
               >Get Started</a
             >
           </div>
@@ -33,3 +37,17 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToView(section) {
+      this.$emit('scrollTo', section)
+      const div = document.querySelector('.active')
+      if (div != null) div.classList.replace('active', 'non-active')
+
+      document.getElementById(section + '-nav').className = 'active'
+    },
+  },
+}
+</script>

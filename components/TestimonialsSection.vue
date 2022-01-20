@@ -7,7 +7,7 @@
           We provide high standard clean website for your business solutions
         </p>
       </div>
-
+      <!-- {{ testimonials.data }} -->
       <div
         class="testimonials-slider swiper"
         data-aos="fade-up"
@@ -15,7 +15,7 @@
       >
         <div class="swiper-wrapper">
           <div
-            v-for="(item, index) in document.data.testimonials"
+            v-for="(item, index) in testimonials.data.testimonials"
             :key="index"
             class="swiper-slide"
           >
@@ -41,11 +41,10 @@
 
 <script>
 export default {
-  // props: { data: { type: Object, default: () => {} } },
+  props: { testimonials: { type: Object, default: () => {} } },
 
   data() {
     return {
-      document: {},
       swiperOption: {
         loop: true,
         slidesPerView: 3,
@@ -59,9 +58,6 @@ export default {
         },
       },
     }
-  },
-  async fetch() {
-    this.document = await this.$prismic.api.getSingle('testimonials')
   },
 }
 </script>

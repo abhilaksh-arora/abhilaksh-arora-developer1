@@ -32,24 +32,97 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Blogs</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li>
-            <a class="btn-color btn getstarted scrollto" href="#about"
+            <a
+              id="hero-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('hero')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              id="about-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('about')"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              id="services-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('services')"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              id="portfolio-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('portfolio')"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              id="testimonials-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('testimonials')"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              id="blogs-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('blogs')"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              id="contact-nav"
+              class="nav-link scrollto"
+              @click="scrollToView('contact')"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              id="about-nav"
+              class="btn btn-color getstarted scrollto"
+              @click="scrollToView('about')"
               >Get Started</a
             >
           </li>
         </ul>
-        <svg-navSVG class="mobile-nav-toggle" />
+        <button class="mobile-nav-toggle" @click="mobileNavView()">
+          <svg-navSVG />
+        </button>
       </nav>
-      <!-- .navbar -->
     </div>
   </header>
 </template>
+<script>
+export default {
+  methods: {
+    scrollToView(section) {
+      this.$emit('scrollTo', section)
+      const div = document.querySelector('.active')
+      if (div != null) div.classList.replace('active', 'non-active')
 
+      document.getElementById(section + '-nav').className = 'active'
+
+      const divDisable = document.querySelector('#navbar')
+      divDisable.classList.remove('navbar-mobile')
+    },
+    mobileNavView() {
+      const div = document.querySelector('#navbar')
+      div.classList.toggle('navbar-mobile')
+    },
+  },
+}
+</script>
 <style></style>

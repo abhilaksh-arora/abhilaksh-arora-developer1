@@ -12,7 +12,7 @@
       </div>
 
       <div class="faq-list">
-        <ul v-for="(item, index) in document.data.faqs" :key="index">
+        <ul v-for="(item, index) in faqs.data.faqs" :key="index">
           <li data-aos="fade-up">
             <i class="bx bx-help-circle icon-help"></i>
             <a
@@ -41,14 +41,6 @@
 
 <script>
 export default {
-  props: { data: { type: Object, default: () => {} } },
-  data() {
-    return {
-      document: {},
-    }
-  },
-  async fetch() {
-    this.document = await this.$prismic.api.getSingle('faqs')
-  },
+  props: { faqs: { type: Object, default: () => {} } },
 }
 </script>

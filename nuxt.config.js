@@ -18,7 +18,10 @@ export default {
   css: ['~/assets/style.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/vue-awesome-swiper', mode: 'client', ssr: false }],
+  plugins: [{ src: '~/plugins/vue-awesome-swiper', mode: 'client', ssr: false },{
+    src: '~/plugins/gtag.js',
+      mode: 'client'
+    }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,16 +43,23 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/robots',
   ],
   serverMiddleware: [
     { path: '/api/send', handler: '~/api/app.js' }
   ],
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+  },
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

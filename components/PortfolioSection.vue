@@ -25,7 +25,7 @@
         data-aos-delay="400"
       >
         <div
-          v-for="(item, index) in document.data.portfolio"
+          v-for="(item, index) in data.portfolio"
           :key="index"
           class="col-lg-4 col-md-6 portfolio-item filter-app"
         >
@@ -45,13 +45,5 @@
 <script>
 export default {
   props: { data: { type: Object, default: () => {} } },
-  data() {
-    return {
-      document: {},
-    }
-  },
-  async fetch() {
-    this.document = await this.$prismic.api.getSingle('portfolio')
-  },
 }
 </script>
