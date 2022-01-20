@@ -94,7 +94,7 @@
           </div>
         </form>
       </div>
-      <div v-else class="my-3 ml-4 text-center">
+      <div v-else class="my-3 text-center">
         <div class="sent-message">
           <h3>Your message has been sent. Thank you!</h3>
         </div>
