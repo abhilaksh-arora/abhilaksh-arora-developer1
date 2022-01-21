@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="d-flex">
+  <section id="hero" class="d-flex mb-0 mb-lg-2">
     <div class="container">
       <div class="row">
         <div
