@@ -15,7 +15,7 @@
         >
           <div class="icon-box">
             <div class="icon"><svg-clientSVG /></div>
-            <h4 class="title"><a href="">Client Satisfaction</a></h4>
+            <h4 class="title">Client Satisfaction</h4>
             <p class="description">
               We continuously monitor and gather feedback from all of our
               clients in order to improve our services and adapt the delivery
@@ -32,7 +32,7 @@
         >
           <div class="icon-box">
             <div class="icon"><svg-deliverySVG /></div>
-            <h4 class="title"><a href="">Fast Delivery Process</a></h4>
+            <h4 class="title">Fast Delivery Process</h4>
             <p class="description">
               We want you to get your app out there as soon as possible, and
               gather feedback from your users. Thanks to the MVP approach you’ll
@@ -48,7 +48,7 @@
         >
           <div class="icon-box">
             <div class="icon"><svg-cheapSVG /></div>
-            <h4 class="title"><a href="">Cheap Prices</a></h4>
+            <h4 class="title">Cheap Prices</h4>
             <p class="description">
               We are better and yet cheaper than other solutions
             </p>
@@ -62,7 +62,7 @@
         >
           <div class="icon-box">
             <div class="icon"><svg-transparencySVG /></div>
-            <h4 class="title"><a href="">Transparency</a></h4>
+            <h4 class="title">Transparency</h4>
             <p class="description">
               We discuss priorities, long term plans and get feedback on regular
               meetings and shared communication channels with all the

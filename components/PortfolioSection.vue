@@ -6,6 +6,14 @@
         <p>
           We provide high standard clean website for your business solutions
         </p>
+        <p>
+          View full websites at
+          <a
+            href="https://www.linkedin.com/in/abhilaksh-arora-94b1861b6/"
+            class="netlify"
+            >Netlify</a
+          >
+        </p>
       </div>
 
       <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">

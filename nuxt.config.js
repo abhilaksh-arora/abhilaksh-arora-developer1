@@ -11,7 +11,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-abhi.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-abhi.ico' },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i',
+    },],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

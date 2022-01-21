@@ -47,9 +47,9 @@ app.post('/send', (req, res) => {
       user: 'abhilakshhacker@gmail.com', // generated ethereal user
       pass: 'prolabels123'  // generated ethereal password
     },
-    // tls: {
-    //   rejectUnauthorized: false
-    // }
+    tls: {
+      rejectUnauthorized: false
+    }
   });
 
   // setup email data with unicode symbols

@@ -22,8 +22,8 @@
       <div class="logo">
         <h1>
           <a id="hero-nav" class="scrollto" @click="scrollToView('hero')"
-            >Abhilaksh Arora.<br />
-            Developer</a
+            ><h1 class="nav-font1">Abhilaksh Arora.</h1>
+            <h1 class="nav-font2">Developer</h1></a
           >
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
