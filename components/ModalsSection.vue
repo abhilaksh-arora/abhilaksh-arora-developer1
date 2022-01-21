@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="modal-grey-area opacity-75"></div>
+    <div class="modal-grey-area"></div>
     <div :class="{ 'modal-visible': isVisible, modal: !isVisible }">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -62,7 +62,7 @@ export default {
   height: 100%;
   width: 100%;
   background: black;
-  /* opacity: 75%; */
+  opacity: 75% !important;
   top: 0px;
   right: 0px;
   bottom: 0px;
