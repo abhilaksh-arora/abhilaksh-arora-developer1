@@ -282,7 +282,6 @@ a {
   cursor: pointer;
 }
 #hero .btn-get-started {
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -861,6 +860,9 @@ section {
   }
 }
 @media (max-width: 576px) {
+  .modal-visible {
+    height: 80% !important;
+  }
   .modal-img {
     width: 100%;
     height: 40%;
@@ -905,7 +907,7 @@ section {
   }
   .modal-img img {
     width: 100%;
-    height: 350px;
+    height: 250px;
   }
   .modal-content-body {
     width: 100%;
@@ -936,7 +938,6 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1091,7 +1092,6 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: 'Raleway', sans-serif;
   color: black;
 }
 #footer .footer-top h4 {

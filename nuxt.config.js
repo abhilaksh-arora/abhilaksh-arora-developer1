@@ -1,4 +1,8 @@
 export default {
+  mode: 'static',
+   router: {
+      base: '/abhilaksh-arora-developer1/'
+   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Abhilaksh Arora | Developer',
